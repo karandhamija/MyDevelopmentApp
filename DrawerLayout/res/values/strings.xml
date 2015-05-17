@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyFlightSearch</string>
+    <string name="title_section1">Flights</string>
+    <string name="title_section2">Hotels</string>
+    <string name="title_section3">Buses</string>
+    <string name="data_section1">Section Name is Flights</string>
+    <string name="data_section2">Section Name is Hotels</string>
+    <string name="data_section3">Section Name is Buses</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
