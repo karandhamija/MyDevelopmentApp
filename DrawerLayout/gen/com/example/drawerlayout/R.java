@@ -1953,7 +1953,6 @@ containing a value of this type.
         public static final int icon=0x7f09002b;
         public static final int ifRoom=0x7f09001b;
         public static final int image=0x7f090028;
-        public static final int imageView1=0x7f090057;
         public static final int linear=0x7f090058;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f09002a;
@@ -1979,7 +1978,7 @@ containing a value of this type.
         public static final int search_plate=0x7f090048;
         public static final int search_src_text=0x7f090049;
         public static final int search_voice_btn=0x7f09004d;
-        public static final int section_label=0x7f090052;
+        public static final int section_label=0x7f090053;
         public static final int select_dialog_listview=0x7f09004e;
         public static final int shortcut=0x7f090039;
         public static final int showCustom=0x7f090010;
@@ -1993,7 +1992,8 @@ containing a value of this type.
         public static final int submit_area=0x7f09004b;
         public static final int tabMode=0x7f09000c;
         public static final int textSpacerNoButtons=0x7f090033;
-        public static final int textView1=0x7f090053;
+        public static final int textView=0x7f090057;
+        public static final int textView1=0x7f090052;
         public static final int textView2=0x7f090054;
         public static final int textView3=0x7f090056;
         public static final int textView4=0x7f090059;
@@ -2061,15 +2061,17 @@ containing a value of this type.
         public static final int abc_select_dialog_material=0x7f030017;
         public static final int abc_simple_dropdown_hint=0x7f030018;
         public static final int activity_main=0x7f030019;
-        public static final int fragment_main=0x7f03001a;
-        public static final int fragment_main_2=0x7f03001b;
-        public static final int fragment_main_3=0x7f03001c;
-        public static final int fragment_navigation_drawer=0x7f03001d;
-        public static final int mainscreen=0x7f03001e;
-        public static final int select_dialog_item_material=0x7f03001f;
-        public static final int select_dialog_multichoice_material=0x7f030020;
-        public static final int select_dialog_singlechoice_material=0x7f030021;
-        public static final int support_simple_spinner_dropdown_item=0x7f030022;
+        public static final int fragment_layout=0x7f03001a;
+        public static final int fragment_main=0x7f03001b;
+        public static final int fragment_main_2=0x7f03001c;
+        public static final int fragment_main_3=0x7f03001d;
+        public static final int fragment_navigation_drawer=0x7f03001e;
+        public static final int mainscreen=0x7f03001f;
+        public static final int mainscreen_new=0x7f030020;
+        public static final int select_dialog_item_material=0x7f030021;
+        public static final int select_dialog_multichoice_material=0x7f030022;
+        public static final int select_dialog_singlechoice_material=0x7f030023;
+        public static final int support_simple_spinner_dropdown_item=0x7f030024;
     }
     public static final class menu {
         public static final int global=0x7f0c0000;

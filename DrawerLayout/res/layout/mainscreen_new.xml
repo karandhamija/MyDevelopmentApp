@@ -22,49 +22,45 @@
         android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp">
-    	<TextView
+    	<FrameLayout
         	android:id="@+id/textView1"
         	android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
         	android:gravity="center_horizontal"
-        	android:layout_weight="1"
-        	android:text="Flights" />
+        	android:layout_weight="1"/>
     	<Button
         	android:layout_width="0dp"
         	android:layout_height="wrap_content"
         	android:layout_weight="1"/>
 
-    	<TextView
+    	<FrameLayout
         	android:id="@+id/textView2"
         	android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
         	android:gravity="center_horizontal"
-        	android:layout_weight="1"
-	        android:text="Hotels" />
+        	android:layout_weight="1"/>
 
     	<Button
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"/>
-	    <TextView
+	    <FrameLayout
 	        android:id="@+id/textView3"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center_horizontal"
-	        android:layout_weight="1"
-	        android:text="Buses" />
+	        android:layout_weight="1"/>
 	
-	    <Button
+<!-- 	    <Button
 	        android:layout_width="0dp"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1"/>
-	    <TextView
+	    <FrameLayout
 	        android:id="@+id/textView4"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:gravity="center_horizontal"
-	        android:layout_weight="1"
-	        android:text="TextView4" />
+	        android:layout_weight="1"/> -->
 
     </LinearLayout>
 </RelativeLayout>

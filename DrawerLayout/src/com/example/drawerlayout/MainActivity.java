@@ -148,13 +148,13 @@ public class MainActivity extends ActionBarActivity
         	int sectionNumber = getArguments().getInt(ARG_SECTION_NUMBER);
         	switch(sectionNumber){
         	case 1:
-        		rootView = inflater.inflate(R.layout.fragment_main, container, false);;
+        		rootView = inflater.inflate(R.layout.fragment_main, container, false);
         		break;
         	case 2:
-        		rootView = inflater.inflate(R.layout.fragment_main_2, container, false);;
+        		rootView = inflater.inflate(R.layout.fragment_main_2, container, false);
         		break;
         	case 3:
-        		rootView = inflater.inflate(R.layout.fragment_main_3, container, false);;
+        		rootView = inflater.inflate(R.layout.fragment_main_3, container, false);
         		break;
         	}
 
