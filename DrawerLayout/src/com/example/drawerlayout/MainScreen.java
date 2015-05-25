@@ -8,9 +8,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-public class MainScreen extends Activity implements LayoutFragment.FragmentCallback {
+public class MainScreen extends Activity implements FragmentCallback {
 
-	int position = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -18,11 +17,7 @@ public class MainScreen extends Activity implements LayoutFragment.FragmentCallb
 		setContentView(R.layout.mainscreen_new);
 		FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction mTransaction = fragmentManager.beginTransaction();
-        mTransaction.add(R.id.textView1, LayoutFragment.newInstance(position + 1)).commit();
-        mTransaction = fragmentManager.beginTransaction();
-        mTransaction.add(R.id.textView2, LayoutFragment.newInstance(position + 2)).commit();
-        mTransaction = fragmentManager.beginTransaction();
-        mTransaction.add(R.id.textView3, LayoutFragment.newInstance(position + 3)).commit();
+        mTransaction.add(R.id.textView1, LayoutFragment.newInstance()).commit();
 
 		/*View.OnClickListener mNewListener = new View.OnClickListener() {
 			

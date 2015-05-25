@@ -13,26 +13,40 @@ import android.widget.TextView;
 public class LayoutFragment extends Fragment {
 
 	FragmentCallback mCallBack;
-	
-	public interface FragmentCallback {
-		
-		public void onCallback(int posion);
-	}
 
-	private static final String ARG_SECTION_NUMBER = "section_number";
-    
-    private static int mSectionNumber = 0;
+	View.OnClickListener mNewClickListener = new View.OnClickListener() {
+		
+		@Override
+		
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			int mnum = 0;
+			switch(Integer.parseInt((String) v.getTag())){
+			
+			case 1:
+				mnum = 1;
+				break;
+			case 2:
+				mnum = 2;
+				break;
+			case 3:
+				mnum = 3;
+				break;
+			}
+			mCallBack.onCallback(mnum);
+		}
+	};
 
     /**
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static LayoutFragment newInstance(int sectionNumber) {
+    public static LayoutFragment newInstance() {
     	LayoutFragment fragment = new LayoutFragment();
-        Bundle args = new Bundle();
+        /*Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         mSectionNumber = sectionNumber;
-        fragment.setArguments(args);
+        fragment.setArguments(args);*/
         return fragment;
     }
 
@@ -64,41 +78,16 @@ public class LayoutFragment extends Fragment {
 		// TODO Auto-generated method stub
 		super.onCreateView(inflater, container, savedInstanceState);
 		View rootView = null;
-		mSectionNumber = getArguments().getInt(ARG_SECTION_NUMBER);
-		Log.v("karan", "mSectionNumber is " + mSectionNumber);
 		rootView = inflater.inflate(R.layout.fragment_layout, container, false);
-		
-		TextView mTextView = (TextView) rootView.findViewById(R.id.textView1);
-		String text = "";
 
-		switch(mSectionNumber){
-			case 1: 
-				text = "Flights";
-				break;
-			case 2: 
-				text = "Hotels";
-				break;
-			case 3: 
-				text = "Buses";
-				break;
-			case 4: 
-				text = "Settings";
-				break;
-				
-		}
-		Log.v("karan", "text is " + text);
-		mTextView.setText(text);
-		((View) mTextView.getParent()).setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Log.v("karan", "OnClick");
-				// TODO Auto-generated method stub
-				int mnum = getArguments().getInt(ARG_SECTION_NUMBER);;
-				mCallBack.onCallback(mnum);
-			}
-		});
+		TextView mView1 = (TextView) rootView.findViewById(R.id.textView1);
+		mView1.setOnClickListener(mNewClickListener);
+		TextView mView2 = (TextView) rootView.findViewById(R.id.textView2);
+		mView2.setOnClickListener(mNewClickListener);
+		TextView mView3 = (TextView) rootView.findViewById(R.id.textView3);
+		mView3.setOnClickListener(mNewClickListener);
 		return rootView;
 	}
+
 	
 }
