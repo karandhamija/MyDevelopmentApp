@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgCalIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:src="@drawable/calendar_month" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        style="@style/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imgCalIcon"
+        android:layout_toRightOf="@+id/imgCalIcon"
+        android:text="02" />
+
+    <LinearLayout
+        android:id="@+id/lnrMonthDayContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/txtDate"
+        android:layout_toRightOf="@+id/txtDate"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtMonthYear"
+            style="@style/Date.MonthYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUN &apos;15" />
+
+        <TextView
+            android:id="@+id/txtDay"
+            style="@style/Date.Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUE" />
+    </LinearLayout>
+
+</RelativeLayout>

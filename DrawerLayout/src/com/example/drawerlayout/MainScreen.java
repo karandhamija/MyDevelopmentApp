@@ -51,10 +51,11 @@ public class MainScreen extends Activity implements FragmentCallback {
 			mTab = "4";
 			break;
 		}
-		Intent mIntent = new Intent();
-		mIntent.setClass(getApplicationContext(), MainActivity.class);
-		mIntent.setData(Uri.parse(mTab));
-		startActivity(mIntent);
+//		Intent mIntent = new Intent();
+//		mIntent.setClass(getApplicationContext(), MainActivity.class);
+//		mIntent.setData(Uri.parse(mTab));
+//		startActivity(mIntent);
+		CriteriaActivity.launchSearchActivity(MainScreen.this);
 	}
 
 }

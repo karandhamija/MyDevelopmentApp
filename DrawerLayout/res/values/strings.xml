@@ -12,5 +12,20 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="calendar_week_sunday">Sun</string>
+    <string name="calendar_week_monday">Mon</string>
+    <string name="calendar_week_tuesday">Tue</string>
+    <string name="calendar_week_wednesday">Wed</string>
+    <string name="calendar_week_thursday">Thu</string>
+    <string name="calendar_week_fridayy">Fri</string>
+    <string name="calendar_week_saturday">Sat</string>
+    <string name="search_flights">Search Flights</string>
+    
+    <string-array name="flight_class">
+        <item>Economy</item>
+        <item>Executive</item>
+        <item>Business</item>
+    </string-array>
 
 </resources>

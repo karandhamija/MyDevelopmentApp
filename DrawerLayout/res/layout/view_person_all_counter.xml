@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Search.Childs.Persons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/lnrAdultCounterContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rlChildrenCounterContainer"
+        android:layout_toStartOf="@+id/rlChildrenCounterContainer" >
+
+        <include
+            android:id="@+id/lnrAdultCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/view_person_counter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlChildrenCounterContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" >
+
+        <include
+            android:id="@+id/lnrChildrenCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/view_person_counter" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lnrInfantCounterContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/rlChildrenCounterContainer"
+        android:layout_toRightOf="@+id/rlChildrenCounterContainer" >
+
+        <include
+            android:id="@+id/lnrInfantCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/view_person_counter" />
+    </RelativeLayout>
+
+</RelativeLayout>

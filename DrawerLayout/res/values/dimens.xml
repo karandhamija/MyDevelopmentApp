@@ -1,13 +1,48 @@
 <resources>
 
     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="rounded_rect_padding">1dp</dimen>
+    <dimen name="rounded_rect_radius">15dp</dimen>
+    <dimen name="rounded_rect_width">10dp</dimen>
+    <dimen name="rounded_rect_height">5dp</dimen>
+    <dimen name="circle_padding">2dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-
-    <!--
+    <dimen name="calendar_textsize_month">24sp</dimen>
+    <dimen name="calendar_textsize_day">12sp</dimen>
+    <dimen name="calendar_textsize_week">12sp</dimen>
+    <dimen name="calendar_padding_handle_left_right">10dp</dimen>
+    <dimen name="calendar_padding_handle_top_bottom">5dp</dimen>
+    <dimen name="calendar_padding_week">5dp</dimen>
+    <dimen name="counter_handle_textsize">20sp</dimen>
+    <dimen name="counter_handle_padding">5dp</dimen>
+    <dimen name="counter_width">103dp</dimen>
+    <dimen name="counter_height">35dp</dimen>
+    <dimen name="counter_text_padding">5dp</dimen>
+    <dimen name="counter_text_textsize">15sp</dimen>
+    <dimen name="counter_person_text_textsize">12sp</dimen>
+    <dimen name="city_code_textsize">30sp</dimen>
+    <dimen name="city_name_textsize">25sp</dimen>
+    <dimen name="city_from_to_padding">5dp</dimen>
+    <dimen name="date_textsize">35sp</dimen>
+    <dimen name="date_month_year_textsize">14sp</dimen>
+    <dimen name="date_day_textsize">14sp</dimen>
+    <dimen name="flight_class_textsize">20sp</dimen>
+    <dimen name="search_flight_textsize">25sp</dimen>
+    <dimen name="activity_search_flight_padding">10dp</dimen>
+    <dimen name="activity_search_childs_margin">20dp</dimen>
+    <dimen name="activity_search_childs_min_height">80dp</dimen>
+    <dimen name="activity_search_childs_city_min_height">70dp</dimen>
+    <dimen name="activity_search_childs_person_min_height">50dp</dimen>
+    <dimen name="activity_search_childs_flight_class_min_height">50dp</dimen>
+    <dimen name="activity_search_childs_search_min_height">50dp</dimen>
+    <dimen name="activity_search_childs_padding_left">10dp</dimen>
+    <dimen name="activity_search_childs_padding_right">10dp</dimen>
+    <dimen name="activity_datepicker_min_calendar_height">400dp</dimen>
+    <dimen name="activity_datepicker_min_calendar_width">300dp</dimen>
+     <!--
          Per the design guidelines, navigation drawers should be between 240dp and 320dp:
          https://developer.android.com/design/patterns/navigation-drawer.html
     -->
     <dimen name="navigation_drawer_width">240dp</dimen>
-
 </resources>

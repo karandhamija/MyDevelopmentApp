@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Activity.Search.Flight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/activity_search_childs_min_height"
+        android:layout_marginTop="@dimen/activity_search_childs_margin"
+        layout="@layout/view_city_from_to" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_search_childs_margin"
+        layout="@layout/view_date_from_to" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="@dimen/activity_search_childs_margin"
+        layout="@layout/view_person_all_counter" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_search_childs_margin"
+        layout="@layout/view_flight_class" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_search_childs_margin"
+        layout="@layout/view_search" />
+
+</LinearLayout>

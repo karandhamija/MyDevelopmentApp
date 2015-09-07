@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.drawerlayout.CalendarView
+        android:id="@+id/counterView"
+        android:layout_width="@dimen/activity_datepicker_min_calendar_width"
+        android:layout_height="@dimen/activity_datepicker_min_calendar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:minHeight="@dimen/activity_datepicker_min_calendar_height"
+        android:minWidth="@dimen/activity_datepicker_min_calendar_width" />
+
+</RelativeLayout>

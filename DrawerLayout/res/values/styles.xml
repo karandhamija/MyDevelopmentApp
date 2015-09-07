@@ -4,7 +4,7 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -14,8 +14,140 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@drawable/rect_background</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-		<item name="homeAsUpIndicator">@drawable/ic_drawer</item>
+    </style>
+
+    <style name="Calendar.Month" parent="AppTheme">
+        <item name="android:textColor">@color/calendar_month_text_color</item>
+        <item name="android:textSize">@dimen/calendar_textsize_month</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Calendar.Day" parent="AppTheme">
+        <item name="android:textColor">@color/calendar_day_text_color</item>
+        <item name="android:textSize">@dimen/calendar_textsize_day</item>
+        <item name="android:background">#034034</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Calendar.Week" parent="AppTheme">
+        <item name="android:textColor">@color/calendar_day_text_color</item>
+        <item name="android:textSize">@dimen/calendar_textsize_day</item>
+        <item name="android:background">#064064</item>
+        <item name="android:padding">@dimen/calendar_padding_week</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Calendar.Month.Handle" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/calendar_padding_handle_left_right</item>
+        <item name="android:paddingRight">@dimen/calendar_padding_handle_left_right</item>
+        <item name="android:paddingTop">@dimen/calendar_padding_handle_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/calendar_padding_handle_top_bottom</item>
+        <item name="android:textSize">@dimen/calendar_textsize_month</item>
+    </style>
+
+    <style name="Counter.Container" parent="AppTheme">
+        <item name="android:background">@color/counter_background</item>
+    </style>
+
+    <style name="Counter.Handle" parent="AppTheme">
+        <item name="android:textColor">@color/counter_handle_color</item>
+        <item name="android:textSize">@dimen/counter_handle_textsize</item>
+        <item name="android:padding">@dimen/counter_handle_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Search.Childs" parent="AppTheme">
+        <item name="android:minHeight">@dimen/activity_search_childs_min_height</item>
+        <item name="android:paddingLeft">@dimen/activity_search_childs_padding_left</item>
+        <item name="android:paddingRight">@dimen/activity_search_childs_padding_right</item>
+    </style>
+
+    <style name="Counter.Text" parent="AppTheme">
+        <item name="android:textColor">@color/counter_text_color</item>
+        <item name="android:textSize">@dimen/counter_text_textsize</item>
+        <item name="android:padding">@dimen/counter_text_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Counter.Person.Text" parent="Counter.Text">
+        <item name="android:textColor">@color/counter_person_text_color</item>
+        <item name="android:textSize">@dimen/counter_person_text_textsize</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CityCode.Text" parent="AppTheme">
+        <item name="android:textColor">@color/city_code_text_color</item>
+        <item name="android:textSize">@dimen/city_code_textsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CityName.Text" parent="AppTheme">
+        <item name="android:textColor">@color/city_name_text_color</item>
+        <item name="android:textSize">@dimen/city_name_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Date" parent="AppTheme">
+        <item name="android:textColor">@color/date_text_color</item>
+        <item name="android:textSize">@dimen/date_textsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Date.MonthYear" parent="AppTheme">
+        <item name="android:textColor">@color/date_month_year_text_color</item>
+        <item name="android:textSize">@dimen/date_month_year_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Date.Day" parent="AppTheme">
+        <item name="android:textColor">@color/date_day_text_color</item>
+        <item name="android:textSize">@dimen/date_day_textsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Divider" parent="AppTheme">
+        <item name="android:background">@drawable/line_grey</item>
+    </style>
+
+    <style name="FlightClass" parent="Search.Childs">
+        <item name="android:background">@drawable/rounded_rect_white</item>
+        <item name="android:textColor">@color/flight_class_text_color</item>
+        <item name="android:textSize">@dimen/flight_class_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/activity_search_childs_flight_class_min_height</item>
+    </style>
+
+    <style name="Search.Flight" parent="Search.Childs">
+        <item name="android:background">@drawable/rounded_rect_orange</item>
+        <item name="android:textColor">@color/search_flight_text_color</item>
+        <item name="android:textSize">@dimen/search_flight_textsize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/activity_search_childs_search_min_height</item>
+    </style>
+
+    <style name="Activity.Search.Flight" parent="AppTheme">
+        <item name="android:background">@drawable/rect_background</item>
+        <item name="android:padding">@dimen/activity_search_flight_padding</item>
+    </style>
+
+    <style name="Search.Childs.City" parent="Search.Childs">
+        <item name="android:minHeight">@dimen/activity_search_childs_city_min_height</item>
+    </style>
+
+    <style name="Search.Childs.Date" parent="Search.Childs"></style>
+
+    <style name="Search.Childs.Persons" parent="Search.Childs">
+        <item name="android:minHeight">@dimen/activity_search_childs_person_min_height</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
     </style>
 
 </resources>
